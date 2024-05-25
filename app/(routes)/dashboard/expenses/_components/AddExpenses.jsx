@@ -4,12 +4,13 @@ import { db } from "@/utils/dbConfig";
 import { Budgets, Expenses } from "@/utils/schema";
 import React, { useState } from "react";
 import { toast } from "sonner";
+import moment from "moment/moment";
 
 function AddExpenses({budgetId,user,refreshData}) {
     const [name,setName] = useState();
     const [amount,setAmount] = useState();
     const addNewExpenses = async() =>{
-        const result = await db.insert(Expenses).values({name:name, amount:amount, budgetId : budgetId, createdAt:user?.primaryEmailAddress?.emailAddress}).returning({insertedId:Budgets.id});
+        const result = await db.insert(Expenses).values({name:name, amount:amount, budgetId : budgetId, createdAt:moment().format('DD/MM/yyyy')}).returning({insertedId:Budgets.id});
 
         console.log(result);
         if(result){

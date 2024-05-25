@@ -48,7 +48,7 @@ function ExpensesScreen({params}) {
         </div>
         <div>
             <h2>Latest Expenses</h2>
-            <ExpenseListTable expensesList={expensesList}/>
+            <ExpenseListTable expensesList={expensesList} refreshData={()=>getBudgetInfo()}/>
         </div>
     </div>
   )
