@@ -13,6 +13,8 @@ function AddExpenses({budgetId,user,refreshData}) {
         const result = await db.insert(Expenses).values({name:name, amount:amount, budgetId : budgetId, createdAt:moment().format('DD/MM/yyyy')}).returning({insertedId:Budgets.id});
 
         console.log(result);
+        setAmount('');
+        setName('');
         if(result){
             refreshData();
             toast('New Expenses Added !')
@@ -23,15 +25,15 @@ function AddExpenses({budgetId,user,refreshData}) {
       <h2 className="font-bold text-lg ">Add Expenses</h2>
       <div className="mt-2">
         <h2 className="text-black font-medium my-1">Expense Name</h2>
-        <Input
+        <Input value={name}
           placeholder="e.g, Travel"
           onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div className="mt-2">
-        <h2 className="text-black font-medium my-1">Expense Name</h2>
+        <h2 className="text-black font-medium my-1">Expense Amount</h2>
         <Input
-          placeholder="e.g, 786"
+          placeholder="e.g, 786" value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
       </div>

@@ -23,11 +23,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={outfit.className}>
         <Toaster />
-      <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-        </SignedIn>
         {children}</body>
     </html>
     </ClerkProvider>

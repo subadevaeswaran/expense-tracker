@@ -6,15 +6,15 @@ import { UserButton } from '@clerk/nextjs'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
-const Budgets = () => (
-    <div>
-    </div>
-);
+// const Budgets = () => (
+//     <div>
+//     </div>
+// );
 
-const Expenses = () => (
-    <div>
-    </div>
-);
+// const Expenses = () => (
+//     <div>
+//     </div>
+// );
 
 const Upgrade = () => (
     <div>
@@ -41,7 +41,7 @@ function SideNav() {
             id:3,
             name:'Expenses',
             icon:ReceiptText,
-            path:'/dashboard/expenses/2'
+            path:'/dashboard/expenses/'
         },
         {
             id:4,
@@ -75,8 +75,8 @@ function SideNav() {
                 profile 
             </div>
             <div className='w-3/4 p-5'>
-                {path === '/dashboard/budgets' && <Budgets />}
-                {path === '/dashboard/expenses' && <Expenses />}
+                {/* {path === '/dashboard/budgets' && <Budgets />} */}
+                {/* {path === '/dashboard/expenses' && <Expenses />} */}
                 {path === '/dashboard/upgrade' && <Upgrade />}
             </div>
         </div>
