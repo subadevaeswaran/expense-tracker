@@ -3,7 +3,7 @@ import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } fro
 
 function BarChartDashboard({budgetList}) {
   return (
-    <div className='border rounded-lg p-5'>
+    <div className='border rounded-lg p-5 hover:shadow-md hover:bg-slate-50'>
       <h2 className='font-bold text-lg'>Amount</h2>
       <ResponsiveContainer width={'80%'} height={300} > 
        <BarChart

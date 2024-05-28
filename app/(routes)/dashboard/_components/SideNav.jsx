@@ -16,12 +16,12 @@ import Link from 'next/link'
 //     </div>
 // );
 
-const Upgrade = () => (
-    <div>
-        <h1>Upgrade</h1>
-        <p>This is the upgrade page content.</p>
-    </div>
-);
+// const Upgrade = () => (
+//     <div>
+//         <h1>Upgrade</h1>
+//         <p>This is the upgrade page content.</p>
+//     </div>
+// );
 
 function SideNav() {
     const menuList=[
@@ -59,7 +59,7 @@ function SideNav() {
 
     return (
         <div className='h-screen p-5 border shadow-sm'>
-            <Image src={'/logo.svg'} alt="logo" width={160} height={100}/>
+            <Image src={'/expenso-high-resolution-logo (1).png'} alt="logo" width={200} height={120}/>
             <div className='mt-5'>
                 {menuList.map((menu) => (
                     <Link href={menu.path}>
@@ -77,7 +77,7 @@ function SideNav() {
             <div className='w-3/4 p-5'>
                 {/* {path === '/dashboard/budgets' && <Budgets />} */}
                 {/* {path === '/dashboard/expenses' && <Expenses />} */}
-                {path === '/dashboard/upgrade' && <Upgrade />}
+                {/* {path === '/dashboard/upgrade' && <Upgrade />} */}
             </div>
         </div>
     )
