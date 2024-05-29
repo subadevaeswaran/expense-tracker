@@ -16,7 +16,7 @@ function ExpenseListTable({expensesList,refreshData}) {
 
   
   return (
-    <div className='mt-3 border rounded-md'>
+    <div className='mt-3 border rounded-md bg-gradient-to-r from-purple-50 to-violet-50'>
         <div className='grid grid-cols-4 bg-slate-200 p-2'>
             <h2 className='font-bold'>Name</h2>
             <h2 className='font-bold'>Amount</h2>

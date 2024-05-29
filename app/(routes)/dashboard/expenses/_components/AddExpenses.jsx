@@ -21,7 +21,7 @@ function AddExpenses({budgetId,user,refreshData}) {
         }
     }
   return (
-    <div className="border p-5 rounded-lg">
+    <div className="border p-5 rounded-lg  ">
       <h2 className="font-bold text-lg ">Add Expenses</h2>
       <div className="mt-2">
         <h2 className="text-black font-medium my-1">Expense Name</h2>

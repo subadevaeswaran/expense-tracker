@@ -58,7 +58,7 @@ function SideNav() {
     }, [path])
 
     return (
-        <div className='h-screen p-5 border shadow-sm'>
+        <div className='h-screen p-5 border shadow-md bg-gradient-to-r from-purple-50 to-blue-50'>
             <Image src={'/expenso-high-resolution-logo (1).png'} alt="logo" width={200} height={120}/>
             <div className='mt-5'>
                 {menuList.map((menu) => (

@@ -19,9 +19,9 @@ function Header() {
   };
 
   return (
-    <div className='p-5 flex justify-between items-center border shadow-sm'>
+    <div className='p-5 flex justify-between items-center border shadow-lg bg-gradient-to-b  from-purple-50 to-purple-100'>
       <div>
-        <Image src={"/expenso-high-resolution-logo (1).png"} alt="logo" width={200} height={150} />
+        <Image src={"/expenso-high-resolution-logo (1).png"} alt="logo" width={150} height={100} />
       </div>
       {isSignedIn ? (
         <div onClick={handleUserButtonClick}>

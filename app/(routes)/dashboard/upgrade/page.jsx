@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <div className="max-w-screen-xl flex items-center justify-end px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <div className="max-w-screen-xl flex items-center justify-end px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 bg-gradient-to-r from-purple-50 to-violet-50">
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
     <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md cursor-pointer hover:bg-slate-50">
       <div className="p-6 sm:px-8 ">

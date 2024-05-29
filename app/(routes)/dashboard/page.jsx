@@ -46,7 +46,7 @@ function Dashboard() {
      
     }
   return (
-    <div className='p-5'>
+    <div className='p-5 bg-gradient-to-r from-purple-50 to-violet-50'>
       <div className='flex justify-between items-start'>
       <h2 className='font-bold text-3xl'>Hi, {user?.fullName} </h2>
       <Link href={'/'}><Button className='cursor-pointer' ><HomeIcon className='mx-1 h-5 w-5' /><span className='font-semibold text-base'>Home </span></Button></Link>

@@ -19,8 +19,8 @@ function BarChartDashboard({budgetList}) {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey='totalSpend' stackId="a" fill='#3498db' />
-        <Bar dataKey='amount' stackId="a" fill="#7cc4fe" />
+        <Bar dataKey='totalSpend' stackId="a" fill='#8654FC' />
+        <Bar dataKey='amount' stackId="a" fill="#ab8afb" />
       </BarChart>
       </ResponsiveContainer>
     

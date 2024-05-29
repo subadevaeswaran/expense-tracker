@@ -38,7 +38,7 @@ function expense() {
      
     }
   return (
-    <div > <h2 className="font-bold text-2xl p-5 ml-2 ">All Expenses</h2>
+    <div className='h-screen bg-gradient-to-r from-purple-50 to-violet-50' > <h2 className="font-bold text-2xl p-5 ml-2 ">All Expenses</h2>
 <div className='mx-6 hover:shadow-md'>
 <ExpenseListTable expensesList={expensesList} refreshData={()=>getBudgetList()} />
 </div>
